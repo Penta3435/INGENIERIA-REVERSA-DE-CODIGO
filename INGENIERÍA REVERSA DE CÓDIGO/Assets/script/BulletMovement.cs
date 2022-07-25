@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour
 {
+    [SerializeField] GameObject gameObject;
     [SerializeField] float speed = 20;
+    float altura;
     void Start()
     {
         
@@ -13,7 +15,9 @@ public class BulletMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate((Vector3.forward * speed + Vector3.up * altura) * Time.deltaTime);
+        altura = gameObject.transform.localPosition.y / gameObject.transform.localPosition.z;
+
         Destroy(this.gameObject,3);
     }
 }
