@@ -108,6 +108,9 @@ GameObject:
   - component: {fileID: 6111698436340232300}
   - component: {fileID: 4759710038100783211}
   - component: {fileID: 1890471933931438286}
+  - component: {fileID: 76369625453787178}
+  - component: {fileID: 5838826349343693622}
+  - component: {fileID: 9124254606420055186}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -192,6 +195,45 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &76369625453787178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420477544391453714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509ad59b77b856d4ebb344b13ab30f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 3060742063931900860, guid: d843cc87a9897a64a9a0e7bc75d8f112, type: 3}
+--- !u!114 &5838826349343693622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420477544391453714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8e590a4c59fe14a8944b90a50afa3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {fileID: 174738376185834350}
+--- !u!114 &9124254606420055186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420477544391453714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8e590a4c59fe14a8944b90a50afa3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {fileID: 174738376185834350}
 --- !u!1 &7116247025404702576
 GameObject:
   m_ObjectHideFlags: 0

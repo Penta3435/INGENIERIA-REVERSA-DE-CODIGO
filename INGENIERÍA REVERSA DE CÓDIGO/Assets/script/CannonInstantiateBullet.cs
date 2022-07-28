@@ -42,6 +42,6 @@ public class CannonInstantiateBullet : MonoBehaviour
     }
     void Clone()
     {
-        Instantiate(bullet);
+        Instantiate(bullet, this.transform.position, this.transform.rotation);
     }
 }
