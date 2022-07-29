@@ -14,12 +14,12 @@ public class RotateCannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("s") || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
             transform.RotateAround(center.transform.position, Vector3.right, 20 * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey("a"))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A))
         {
             transform.RotateAround(center.transform.position, Vector3.right, -20 * Time.deltaTime);
         }

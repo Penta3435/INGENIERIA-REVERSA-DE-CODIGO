@@ -24,21 +24,31 @@ public class CannonInstantiateBullet : MonoBehaviour
 
         //¿qué diferencia hay entre  Input.GetKeyDown("j")  y  Input.GetKeyDown(KeyCode.K)?
         //También encontré Input.GetButton(); pero no logré hacerlo funcionar, creo que hay que ir a input manager y hacer algo
-        if (Input.GetKeyDown("j") && tiempo >= 1)
+        if (Input.GetKeyDown(KeyCode.J) && tiempo >= 1)
         {
-            Clone();
-            tiempo = 0;
+            Invoke("Clone", 0f);
+            Invoke("Clone", 0.3f);
+            Invoke("Tiempo", 0.3f);
         }
         if (Input.GetKeyDown(KeyCode.K) && tiempo >= 1)
         {
-            Clone();
-            tiempo = 0;
+            Invoke("Clone", 0f);
+            Invoke("Clone", 0.3f);
+            Invoke("Clone", 0.6f);
+            Invoke("Tiempo", 0.6f);
         }
-        if (Input.GetKeyDown("l") && tiempo >= 1)
+        if (Input.GetKeyDown(KeyCode.L) && tiempo >= 1)
         {
-            Clone();
-            tiempo = 0;
+            Invoke("Clone", 0f);
+            Invoke("Clone", 0.3f);
+            Invoke("Clone", 0.6f);
+            Invoke("Clone", 0.9f);
+            Invoke("Tiempo", 0.9f);
         }
+    }
+    void Tiempo()
+    {
+        tiempo = 0f;
     }
     void Clone()
     {
