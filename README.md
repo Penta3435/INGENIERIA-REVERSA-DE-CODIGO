@@ -1,1 +1,2 @@
-# Liu---INGENIERIA-REVERSA-DE-CODIGO
+# INGENIERIA-REVERSA-DE-CODIGO
+Este es un ejercicio del curso de Coderhouse
